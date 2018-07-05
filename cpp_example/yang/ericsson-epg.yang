@@ -1,0 +1,15 @@
+module ericsson-epg {
+  prefix epg;
+  namespace "urn:rdns:com:ericsson:oammodel:ericsson-epg";
+
+  include ericsson-epg-pgw;
+  include ericsson-epg-pgw-apn;
+
+  container epg {
+    presence "epg need presence";
+    container pgw {
+      presence "pgw need presence";
+      uses pgw_type;
+    }
+  }
+}

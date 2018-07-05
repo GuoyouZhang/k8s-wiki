@@ -1,0 +1,12 @@
+submodule m2 {
+
+	belongs-to "m0" {
+		prefix "m0";
+	}
+
+	grouping group2 {
+		leaf bbb {
+			type string;
+		}
+	}	
+}

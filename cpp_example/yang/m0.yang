@@ -1,0 +1,19 @@
+module m0 {
+	prefix m0;
+	namespace "urn:m0";
+	
+	include m1;
+	include m2;
+
+	grouping xxx {
+		leaf ccc {
+			type string;
+		}
+	}
+	container zgy {
+		container pgw {
+			uses group1;
+			uses group2;
+		}
+	}	
+}

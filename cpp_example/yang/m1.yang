@@ -1,0 +1,19 @@
+submodule m1 {
+
+	belongs-to "m0" {
+		prefix "m0";
+	}
+
+//	import m0 {
+//		prefix "m0";
+//	}
+
+	grouping group1 {
+	/* this is a multi line
+	 * comment
+	 */{
+		leaf aaa {
+			type string;
+		}
+	}	
+}
